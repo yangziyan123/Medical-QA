@@ -191,16 +191,13 @@ watch(
           <input
             v-model="question"
             class="input"
-            placeholder="输入你的问题（SSE 流式输出）"
+            placeholder="输入你的问题"
             :disabled="!chat.currentSessionId || chat.sending"
           />
           <button class="btn primary" type="submit" :disabled="!chat.currentSessionId || chat.sending || !question.trim()">
             {{ chat.sending ? '发送中…' : '发送' }}
           </button>
         </form>
-        <div class="muted">
-          当前模式：SSE（/api/chat/stream）。如果你看不到逐字输出，通常是后端分片过快或被缓冲；已在占位流式中加入轻微延迟。
-        </div>
       </main>
     </div>
   </div>

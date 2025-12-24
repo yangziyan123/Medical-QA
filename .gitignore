@@ -25,3 +25,9 @@ dist/
 
 start.md
 scripts/
+
+*.doc
+*.docx
+*.pdf
+
+实验报告.md
